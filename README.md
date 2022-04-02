@@ -73,7 +73,18 @@ Food Trucker Tracked is your one-stop app for finding the best food trucks near 
 [This section will be completed in Unit 9]
 ### Models
 <img src="model.png" width=600>
+
 ### Networking
-- [Add list of network requests by screen ]
+* Home Feed Screen
+  * (Read/GET) Query 20 posts in Food Truck API
+  * (Create/POST) Create a new like on a food truck post
+  * (Delete) Delete existing like
+* Detail Feed Screen
+  * (Read/GET) Query information like price range and cuisine in Food Truck API
+* Profile Screen
+  * (Read/GET) Query logged in user object
+  * (Update/PUT) Update user profile
+
+
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
