@@ -70,7 +70,7 @@ Food Trucker Tracked is your one-stop app for finding the best food trucks near 
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+<img src="model.png" width=600>
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
