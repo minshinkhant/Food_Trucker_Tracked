@@ -63,6 +63,8 @@ Food Trucker Tracked is your one-stop app for finding the best food trucks near 
 ## Wireframes
 <img src="67052537119__BCBEE8A5-4E6C-4911-BF94-01041B3FD46C.JPG" width=600>
 
+<img src="MiroWireFrame" width=600>
+
 ### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
