@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3A351E2D27C1808500C1F698 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A351E2C27C1808500C1F698 /* AppDelegate.swift */; };
 		3A351E2F27C1808500C1F698 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A351E2E27C1808500C1F698 /* SceneDelegate.swift */; };
-		3A351E3127C1808500C1F698 /* FoodTruckController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A351E3027C1808500C1F698 /* FoodTruckController.swift */; };
+		3A351E3127C1808500C1F698 /* FoodTruckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A351E3027C1808500C1F698 /* FoodTruckViewController.swift */; };
 		3A351E3427C1808500C1F698 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A351E3227C1808500C1F698 /* Main.storyboard */; };
 		3A351E3627C1808600C1F698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A351E3527C1808600C1F698 /* Assets.xcassets */; };
 		3A351E3927C1808600C1F698 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A351E3727C1808600C1F698 /* LaunchScreen.storyboard */; };
@@ -46,7 +46,7 @@
 		3A351E2927C1808500C1F698 /* Foodtruck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodtruck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A351E2C27C1808500C1F698 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A351E2E27C1808500C1F698 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3A351E3027C1808500C1F698 /* FoodTruckController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckController.swift; sourceTree = "<group>"; };
+		3A351E3027C1808500C1F698 /* FoodTruckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckViewController.swift; sourceTree = "<group>"; };
 		3A351E3327C1808500C1F698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A351E3527C1808600C1F698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A351E3827C1808600C1F698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 			children = (
 				3A351E2C27C1808500C1F698 /* AppDelegate.swift */,
 				3A351E2E27C1808500C1F698 /* SceneDelegate.swift */,
-				3A351E3027C1808500C1F698 /* FoodTruckController.swift */,
+				3A351E3027C1808500C1F698 /* FoodTruckViewController.swift */,
 				3A351E3227C1808500C1F698 /* Main.storyboard */,
 				3A8617CB27C74ADB007E9FC3 /* FoodTruckCell.swift */,
 				3A351E3527C1808600C1F698 /* Assets.xcassets */,
@@ -354,7 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A553B8A27CAB5A7002137F0 /* FoodTruckDetailsViewController.swift in Sources */,
-				3A351E3127C1808500C1F698 /* FoodTruckController.swift in Sources */,
+				3A351E3127C1808500C1F698 /* FoodTruckViewController.swift in Sources */,
 				3A351E2D27C1808500C1F698 /* AppDelegate.swift in Sources */,
 				3A8617CC27C74ADB007E9FC3 /* FoodTruckCell.swift in Sources */,
 				3A9124AD2801333600581AA1 /* LoginViewController.swift in Sources */,

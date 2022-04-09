@@ -1,7 +1,7 @@
 
 import UIKit
 
-class MovieGridCell: UICollectionViewCell {
+class FoodtruckGridCell: UICollectionViewCell {
     
     @IBOutlet weak var posterView: UIImageView!
 }

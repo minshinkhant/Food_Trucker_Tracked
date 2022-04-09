@@ -5,7 +5,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet weak var tableView: UITableView!
 
-    var movies = [[String:Any]]()
+    var foodtrucks = [[String:Any]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,10 +23,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
              } else if let data = data {
                     let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                     
-                 self.movies = dataDictionary["results"] as! [[String:Any]]
+                 self.foodtrucks = dataDictionary["results"] as! [[String:Any]]
                  self.tableView.reloadData()
-                    // TODO: Get the array of movies
-                    // TODO: Store the movies in a property to use elsewhere
+                    // TODO: Get the array of foodtrucks
+                    // TODO: Store the foodtrucks in a property to use elsewhere
                     // TODO: Reload your table view data
                  print(dataDictionary)
 
@@ -36,20 +36,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return movies.count
+        return foodtrucks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell
-        let movie = movies[indexPath.row]
-        let title = movie["title"] as! String
-        let synopsis = movie["overview"] as! String
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FoodtruckCell") as! FoodtruckCell
+        let foodtruck = foodtrucks[indexPath.row]
+        let title = foodtruck["title"] as! String
+        let synopsis = foodtruck["overview"] as! String
         
         cell.titleLabel.text = title
         cell.synopsisLabel.text = synopsis
         
         let baseUrl = "https://image.tmdb.org/t/p/w185"
-        let posterPath = movie["poster_path"] as! String
+        let posterPath = foodtruck["poster_path"] as! String
         let posterUrl = URL(string: baseUrl + posterPath)
         cell.posterView.af.setImage(withURL: posterUrl!)
         
@@ -59,14 +59,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         print("Loading up details screen")
-        // Find selected movie
         let cell = sender as! UITableViewCell
         let indexPath = tableView.indexPath(for: cell)!
-        let movie = movies[indexPath.row]
+        let foodtruck = foodtrucks[indexPath.row]
         
-        // Pass selected movie to details view controller
-        let detailsViewController = segue.destination as!MovieDetailsViewController
-        detailsViewController.movie = movie
+        // Pass selected foodtrucks to details view controller
+        let detailsViewController = segue.destination as!FoodtruckDetailsViewController
+        detailsViewController.foodtruck = foodtruck
         
         tableView.deselectRow(at: indexPath, animated: true)
     }

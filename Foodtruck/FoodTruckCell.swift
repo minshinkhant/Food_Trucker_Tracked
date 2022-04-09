@@ -1,6 +1,6 @@
 import UIKit
 
-class MovieCell: UITableViewCell {
+class FoodtruckCell: UITableViewCell {
 
     
     @IBOutlet weak var titleLabel: UILabel!

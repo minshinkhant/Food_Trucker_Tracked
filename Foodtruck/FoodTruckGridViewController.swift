@@ -1,11 +1,11 @@
 import UIKit
 import AlamofireImage
 
-class MovieGridViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class FoodtruckGridViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var movies = [[String:Any]]()
+    var foodtrucks = [[String:Any]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,26 +30,26 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
              } else if let data = data {
                     let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                     
-                 self.movies = dataDictionary["results"] as! [[String:Any]]
+                 self.foodtrucks = dataDictionary["results"] as! [[String:Any]]
                  self.collectionView.reloadData()
                  
-                 print(self.movies)
+                 print(self.foodtrucks)
              }
         }
         task.resume()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return movies.count
+        return foodtrucks.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MovieGridCell", for: indexPath) as! MovieGridCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FoodtruckGridCell", for: indexPath) as! FoodtruckGridCell
         
-        let movie = movies[indexPath.item]
+        let foodtruck = foodtrucks[indexPath.item]
         
         let baseUrl = "https://image.tmdb.org/t/p/w185"
-        let posterPath = movie["poster_path"] as! String
+        let posterPath = foodtruck["poster_path"] as! String
         let posterUrl = URL(string: baseUrl + posterPath)
         cell.posterView.af.setImage(withURL: posterUrl!)
         
