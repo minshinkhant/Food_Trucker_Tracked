@@ -36,6 +36,11 @@ Food Trucker Tracked is your one-stop app for finding the best food trucks near 
 - [ ] Favorite food trucks
 - [ ] Map with directions of getting to food truck
 
+### Current Progress GIF
+Note: Please ignore how after login the screen shows movies (we are using Flix as a model for helping us with layout and connecting our food truck API)
+
+![Demo](https://media.giphy.com/media/Y7fIXt2GfYn1iHoOKb/giphy.gif)
+
 ### 2. Screen Archetypes
 
 * Stream
