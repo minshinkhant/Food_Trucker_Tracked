@@ -25,16 +25,16 @@ Food Trucker Tracked is your one-stop app for finding the best food trucks near 
 
 **Required Must-have Stories**
 
-* List of food trucks
-* Rating, price, cuisine, address, name and image of each food truck
-* Detail screen of each food truck
+- [X] Login screen where user can create a account and log in
+- [ ] List of food trucks
+- [ ] Rating, price, cuisine, address, name and image of each food truck
+- [ ] Detail screen of each food truck
 
 **Optional Nice-to-have Stories**
 
-* Distance of food truck from user
-* Login screen
-* Favorite food trucks
-* Map with directions of getting to food truck
+- [ ] Distance of food truck from user
+- [ ] Favorite food trucks
+- [ ] Map with directions of getting to food truck
 
 ### 2. Screen Archetypes
 
