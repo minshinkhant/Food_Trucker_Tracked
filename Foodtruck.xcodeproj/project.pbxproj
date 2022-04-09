@@ -1,0 +1,730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A351E2D27C1808500C1F698 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A351E2C27C1808500C1F698 /* AppDelegate.swift */; };
+		3A351E2F27C1808500C1F698 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A351E2E27C1808500C1F698 /* SceneDelegate.swift */; };
+		3A351E3127C1808500C1F698 /* FoodTruckController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A351E3027C1808500C1F698 /* FoodTruckController.swift */; };
+		3A351E3427C1808500C1F698 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A351E3227C1808500C1F698 /* Main.storyboard */; };
+		3A351E3627C1808600C1F698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A351E3527C1808600C1F698 /* Assets.xcassets */; };
+		3A351E3927C1808600C1F698 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A351E3727C1808600C1F698 /* LaunchScreen.storyboard */; };
+		3A351E4427C1808700C1F698 /* FlixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A351E4327C1808700C1F698 /* FlixTests.swift */; };
+		3A351E4E27C1808700C1F698 /* FlixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A351E4D27C1808700C1F698 /* FlixUITests.swift */; };
+		3A351E5027C1808700C1F698 /* FlixUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A351E4F27C1808700C1F698 /* FlixUITestsLaunchTests.swift */; };
+		3A553B8A27CAB5A7002137F0 /* FoodTruckDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A553B8927CAB5A7002137F0 /* FoodTruckDetailsViewController.swift */; };
+		3A786D8A27CF1C8200C16DD8 /* FoodTruckGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A786D8927CF1C8200C16DD8 /* FoodTruckGridViewController.swift */; };
+		3A786D8C27CF2AC100C16DD8 /* FoodTruckGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A786D8B27CF2AC100C16DD8 /* FoodTruckGridCell.swift */; };
+		3A8617CC27C74ADB007E9FC3 /* FoodTruckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8617CB27C74ADB007E9FC3 /* FoodTruckCell.swift */; };
+		3A8617CF27C8650D007E9FC3 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3A8617CE27C8650D007E9FC3 /* AlamofireImage */; };
+		3A9124AD2801333600581AA1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9124AC2801333600581AA1 /* LoginViewController.swift */; };
+		7BF07996787FA7EA3E3B9DA2 /* Pods_Foodtruck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621BEC6A736579B395C1D195 /* Pods_Foodtruck.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A351E4027C1808700C1F698 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A351E2127C1808400C1F698 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A351E2827C1808500C1F698;
+			remoteInfo = Flix;
+		};
+		3A351E4A27C1808700C1F698 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A351E2127C1808400C1F698 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A351E2827C1808500C1F698;
+			remoteInfo = Flix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A351E2927C1808500C1F698 /* Foodtruck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodtruck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A351E2C27C1808500C1F698 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A351E2E27C1808500C1F698 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3A351E3027C1808500C1F698 /* FoodTruckController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckController.swift; sourceTree = "<group>"; };
+		3A351E3327C1808500C1F698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A351E3527C1808600C1F698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A351E3827C1808600C1F698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A351E3A27C1808600C1F698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A351E3F27C1808700C1F698 /* FoodtruckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodtruckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A351E4327C1808700C1F698 /* FlixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlixTests.swift; sourceTree = "<group>"; };
+		3A351E4927C1808700C1F698 /* FoodtruckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodtruckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A351E4D27C1808700C1F698 /* FlixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlixUITests.swift; sourceTree = "<group>"; };
+		3A351E4F27C1808700C1F698 /* FlixUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlixUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3A553B8927CAB5A7002137F0 /* FoodTruckDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckDetailsViewController.swift; sourceTree = "<group>"; };
+		3A786D8927CF1C8200C16DD8 /* FoodTruckGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckGridViewController.swift; sourceTree = "<group>"; };
+		3A786D8B27CF2AC100C16DD8 /* FoodTruckGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckGridCell.swift; sourceTree = "<group>"; };
+		3A8617CB27C74ADB007E9FC3 /* FoodTruckCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckCell.swift; sourceTree = "<group>"; };
+		3A9124AC2801333600581AA1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		621BEC6A736579B395C1D195 /* Pods_Foodtruck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foodtruck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76D49FE808BF59038A5A1F7E /* Pods-Flix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flix.debug.xcconfig"; path = "Target Support Files/Pods-Flix/Pods-Flix.debug.xcconfig"; sourceTree = "<group>"; };
+		84F0904220EE66B687053827 /* Pods-Flix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flix.release.xcconfig"; path = "Target Support Files/Pods-Flix/Pods-Flix.release.xcconfig"; sourceTree = "<group>"; };
+		A4208001B885544C1C190A41 /* Pods-Foodtruck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodtruck.release.xcconfig"; path = "Target Support Files/Pods-Foodtruck/Pods-Foodtruck.release.xcconfig"; sourceTree = "<group>"; };
+		D7012339D626855D5461BA2A /* Pods-Foodtruck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodtruck.debug.xcconfig"; path = "Target Support Files/Pods-Foodtruck/Pods-Foodtruck.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A351E2627C1808500C1F698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8617CF27C8650D007E9FC3 /* AlamofireImage in Frameworks */,
+				7BF07996787FA7EA3E3B9DA2 /* Pods_Foodtruck.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A351E3C27C1808700C1F698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A351E4627C1808700C1F698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A351E2027C1808400C1F698 = {
+			isa = PBXGroup;
+			children = (
+				3A351E2B27C1808500C1F698 /* Foodtruck */,
+				3A351E4227C1808700C1F698 /* FoodtruckTests */,
+				3A351E4C27C1808700C1F698 /* FoodtruckUITests */,
+				3A351E2A27C1808500C1F698 /* Products */,
+				B336D85DC055CE7707EB6325 /* Pods */,
+				ACACF74810D426B2CE317CFD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3A351E2A27C1808500C1F698 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A351E2927C1808500C1F698 /* Foodtruck.app */,
+				3A351E3F27C1808700C1F698 /* FoodtruckTests.xctest */,
+				3A351E4927C1808700C1F698 /* FoodtruckUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A351E2B27C1808500C1F698 /* Foodtruck */ = {
+			isa = PBXGroup;
+			children = (
+				3A351E2C27C1808500C1F698 /* AppDelegate.swift */,
+				3A351E2E27C1808500C1F698 /* SceneDelegate.swift */,
+				3A351E3027C1808500C1F698 /* FoodTruckController.swift */,
+				3A351E3227C1808500C1F698 /* Main.storyboard */,
+				3A8617CB27C74ADB007E9FC3 /* FoodTruckCell.swift */,
+				3A351E3527C1808600C1F698 /* Assets.xcassets */,
+				3A351E3727C1808600C1F698 /* LaunchScreen.storyboard */,
+				3A351E3A27C1808600C1F698 /* Info.plist */,
+				3A553B8927CAB5A7002137F0 /* FoodTruckDetailsViewController.swift */,
+				3A786D8927CF1C8200C16DD8 /* FoodTruckGridViewController.swift */,
+				3A786D8B27CF2AC100C16DD8 /* FoodTruckGridCell.swift */,
+				3A9124AC2801333600581AA1 /* LoginViewController.swift */,
+			);
+			path = Foodtruck;
+			sourceTree = "<group>";
+		};
+		3A351E4227C1808700C1F698 /* FoodtruckTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A351E4327C1808700C1F698 /* FlixTests.swift */,
+			);
+			path = FoodtruckTests;
+			sourceTree = "<group>";
+		};
+		3A351E4C27C1808700C1F698 /* FoodtruckUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A351E4D27C1808700C1F698 /* FlixUITests.swift */,
+				3A351E4F27C1808700C1F698 /* FlixUITestsLaunchTests.swift */,
+			);
+			path = FoodtruckUITests;
+			sourceTree = "<group>";
+		};
+		ACACF74810D426B2CE317CFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				621BEC6A736579B395C1D195 /* Pods_Foodtruck.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B336D85DC055CE7707EB6325 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76D49FE808BF59038A5A1F7E /* Pods-Flix.debug.xcconfig */,
+				84F0904220EE66B687053827 /* Pods-Flix.release.xcconfig */,
+				D7012339D626855D5461BA2A /* Pods-Foodtruck.debug.xcconfig */,
+				A4208001B885544C1C190A41 /* Pods-Foodtruck.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A351E2827C1808500C1F698 /* Foodtruck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A351E5327C1808700C1F698 /* Build configuration list for PBXNativeTarget "Foodtruck" */;
+			buildPhases = (
+				2102F70088F960448244E8F3 /* [CP] Check Pods Manifest.lock */,
+				3A351E2527C1808500C1F698 /* Sources */,
+				3A351E2627C1808500C1F698 /* Frameworks */,
+				3A351E2727C1808500C1F698 /* Resources */,
+				8C7E8F7FEB8F46A830820FD1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Foodtruck;
+			packageProductDependencies = (
+				3A8617CE27C8650D007E9FC3 /* AlamofireImage */,
+			);
+			productName = Flix;
+			productReference = 3A351E2927C1808500C1F698 /* Foodtruck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A351E3E27C1808700C1F698 /* FoodtruckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A351E5627C1808700C1F698 /* Build configuration list for PBXNativeTarget "FoodtruckTests" */;
+			buildPhases = (
+				3A351E3B27C1808700C1F698 /* Sources */,
+				3A351E3C27C1808700C1F698 /* Frameworks */,
+				3A351E3D27C1808700C1F698 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A351E4127C1808700C1F698 /* PBXTargetDependency */,
+			);
+			name = FoodtruckTests;
+			productName = FlixTests;
+			productReference = 3A351E3F27C1808700C1F698 /* FoodtruckTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A351E4827C1808700C1F698 /* FoodtruckUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A351E5927C1808700C1F698 /* Build configuration list for PBXNativeTarget "FoodtruckUITests" */;
+			buildPhases = (
+				3A351E4527C1808700C1F698 /* Sources */,
+				3A351E4627C1808700C1F698 /* Frameworks */,
+				3A351E4727C1808700C1F698 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A351E4B27C1808700C1F698 /* PBXTargetDependency */,
+			);
+			name = FoodtruckUITests;
+			productName = FlixUITests;
+			productReference = 3A351E4927C1808700C1F698 /* FoodtruckUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A351E2127C1808400C1F698 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					3A351E2827C1808500C1F698 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					3A351E3E27C1808700C1F698 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 3A351E2827C1808500C1F698;
+					};
+					3A351E4827C1808700C1F698 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 3A351E2827C1808500C1F698;
+					};
+				};
+			};
+			buildConfigurationList = 3A351E2427C1808400C1F698 /* Build configuration list for PBXProject "Foodtruck" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A351E2027C1808400C1F698;
+			packageReferences = (
+				3A8617CD27C8650D007E9FC3 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
+			productRefGroup = 3A351E2A27C1808500C1F698 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A351E2827C1808500C1F698 /* Foodtruck */,
+				3A351E3E27C1808700C1F698 /* FoodtruckTests */,
+				3A351E4827C1808700C1F698 /* FoodtruckUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A351E2727C1808500C1F698 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A351E3927C1808600C1F698 /* LaunchScreen.storyboard in Resources */,
+				3A351E3627C1808600C1F698 /* Assets.xcassets in Resources */,
+				3A351E3427C1808500C1F698 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A351E3D27C1808700C1F698 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A351E4727C1808700C1F698 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2102F70088F960448244E8F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Foodtruck-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C7E8F7FEB8F46A830820FD1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Foodtruck/Pods-Foodtruck-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Foodtruck/Pods-Foodtruck-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Foodtruck/Pods-Foodtruck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A351E2527C1808500C1F698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A553B8A27CAB5A7002137F0 /* FoodTruckDetailsViewController.swift in Sources */,
+				3A351E3127C1808500C1F698 /* FoodTruckController.swift in Sources */,
+				3A351E2D27C1808500C1F698 /* AppDelegate.swift in Sources */,
+				3A8617CC27C74ADB007E9FC3 /* FoodTruckCell.swift in Sources */,
+				3A9124AD2801333600581AA1 /* LoginViewController.swift in Sources */,
+				3A351E2F27C1808500C1F698 /* SceneDelegate.swift in Sources */,
+				3A786D8A27CF1C8200C16DD8 /* FoodTruckGridViewController.swift in Sources */,
+				3A786D8C27CF2AC100C16DD8 /* FoodTruckGridCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A351E3B27C1808700C1F698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A351E4427C1808700C1F698 /* FlixTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A351E4527C1808700C1F698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A351E4E27C1808700C1F698 /* FlixUITests.swift in Sources */,
+				3A351E5027C1808700C1F698 /* FlixUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A351E4127C1808700C1F698 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A351E2827C1808500C1F698 /* Foodtruck */;
+			targetProxy = 3A351E4027C1808700C1F698 /* PBXContainerItemProxy */;
+		};
+		3A351E4B27C1808700C1F698 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A351E2827C1808500C1F698 /* Foodtruck */;
+			targetProxy = 3A351E4A27C1808700C1F698 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A351E3227C1808500C1F698 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A351E3327C1808500C1F698 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A351E3727C1808600C1F698 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A351E3827C1808600C1F698 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A351E5127C1808700C1F698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A351E5227C1808700C1F698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A351E5427C1808700C1F698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7012339D626855D5461BA2A /* Pods-Foodtruck.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5TFSG67Q3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Foodtruck/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Programs.Foodtruck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A351E5527C1808700C1F698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4208001B885544C1C190A41 /* Pods-Foodtruck.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5TFSG67Q3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Foodtruck/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Programs.Foodtruck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3A351E5727C1808700C1F698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5TFSG67Q3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Programs.FlixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Foodtruck.app/Foodtruck";
+			};
+			name = Debug;
+		};
+		3A351E5827C1808700C1F698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5TFSG67Q3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Programs.FlixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Foodtruck.app/Foodtruck";
+			};
+			name = Release;
+		};
+		3A351E5A27C1808700C1F698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5TFSG67Q3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Programs.FlixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Flix;
+			};
+			name = Debug;
+		};
+		3A351E5B27C1808700C1F698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5TFSG67Q3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Programs.FlixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Flix;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A351E2427C1808400C1F698 /* Build configuration list for PBXProject "Foodtruck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A351E5127C1808700C1F698 /* Debug */,
+				3A351E5227C1808700C1F698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A351E5327C1808700C1F698 /* Build configuration list for PBXNativeTarget "Foodtruck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A351E5427C1808700C1F698 /* Debug */,
+				3A351E5527C1808700C1F698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A351E5627C1808700C1F698 /* Build configuration list for PBXNativeTarget "FoodtruckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A351E5727C1808700C1F698 /* Debug */,
+				3A351E5827C1808700C1F698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A351E5927C1808700C1F698 /* Build configuration list for PBXNativeTarget "FoodtruckUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A351E5A27C1808700C1F698 /* Debug */,
+				3A351E5B27C1808700C1F698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3A8617CD27C8650D007E9FC3 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3A8617CE27C8650D007E9FC3 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A8617CD27C8650D007E9FC3 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3A351E2127C1808400C1F698 /* Project object */;
+}

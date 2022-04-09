@@ -1,0 +1,6 @@
+framework module Pods_Foodtruck {
+  umbrella header "Pods-Foodtruck-umbrella.h"
+
+  export *
+  module * { export * }
+}

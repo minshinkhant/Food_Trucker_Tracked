@@ -66,7 +66,7 @@ Note: Please ignore how after login the screen shows movies (we are using Flix a
    * => Home Feed (Back)
 
 ## Wireframes
-<img src="67052537119__BCBEE8A5-4E6C-4911-BF94-01041B3FD46C.JPG" width=600>
+<img src="wireframe.JPG" width=600>
 
 <img src="MiroWireFrame.png" width=600>
 
