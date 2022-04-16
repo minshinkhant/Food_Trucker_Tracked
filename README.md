@@ -26,6 +26,7 @@ Food Trucker Tracked is your one-stop app for finding the best food trucks near 
 **Required Must-have Stories**
 
 - [X] Login screen where user can create a account and log in
+- [X] Logout and user stays logged in/out across all restarts
 - [ ] List of food trucks
 - [ ] Rating, price, cuisine, address, name and image of each food truck
 - [ ] Detail screen of each food truck
@@ -39,7 +40,7 @@ Food Trucker Tracked is your one-stop app for finding the best food trucks near 
 ### Current Progress GIF
 Note: Please ignore how after login the screen shows movies (we are using Flix as a model for helping us with layout and connecting our food truck API)
 
-![Demo](https://media.giphy.com/media/Y7fIXt2GfYn1iHoOKb/giphy.gif)
+![Demo](https://media.giphy.com/media/ntBBvvix2OLeDAAUrG/giphy.gif)
 
 ### 2. Screen Archetypes
 
